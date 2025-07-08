@@ -1,9 +1,11 @@
 name: Hello Flow
+
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *' 
+
 jobs:
-  first-job:
+  say-hello:
     runs-on: ubuntu-latest
     steps:
       - name: Diga oi
